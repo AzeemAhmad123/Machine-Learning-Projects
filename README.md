@@ -1,66 +1,51 @@
-# 🧠 Machine Learning Projects Portfolio
+# Python Time-Series & Forecasting Practice
 
-> 🌟 Passionate Machine Learning Beginner Exploring Real-World Projects with Python
+An educational project exploring COVID-19 time-series data with **Pandas, Plotly, Matplotlib, and Prophet**.
 
-Welcome to my **Machine Learning portfolio repository**! This space showcases my journey as I learn and apply machine learning techniques through hands-on projects. Each project helps me explore different concepts in data preprocessing, modeling, visualization, and evaluation.
+This repository currently contains one forecasting project, provided as a notebook and an exported Python script.
 
----
+## What's included
 
-## 📁 Projects Included
+| File | Purpose |
+| --- | --- |
+| [covid19_prediction_.ipynb](./covid19_prediction_.ipynb) | Main notebook for data exploration, visualization, and forecasting |
+| [covid19_prediction_.py](./covid19_prediction_.py) | Python export of the notebook workflow |
 
-Here you’ll find individual folders or files for various ML projects, such as:
+The workflow includes country-level aggregation, geographic visualizations, rolling averages, and a 30-day Prophet forecast.
 
-- **COVID-19 Cases Forecasting**  
-  Time series prediction using Prophet and data visualization with Plotly.
+## Explore the notebook
 
-- **Iris Flower Classification**  
-  Supervised classification using Logistic Regression and Decision Tree.
+The notebook expects these CSV files, which are **not included in this repository**:
 
-- **Diabetes Prediction**  
-  Data imputation, model training, and evaluation using scikit-learn.
+- `CONVENIENT_global_confirmed_cases.csv`
+- `CONVENIENT_global_deaths.csv`
+- `continents2.csv`
 
-- *(More projects will be added as I continue learning!)*
+Provide compatible data files in the notebook's working directory and check the expected columns before running it.
 
----
+A local Python environment needs Jupyter, NumPy, Pandas, Matplotlib, Plotly, Prophet, and scikit-learn:
 
-## 🛠️ Tools & Libraries
+```bash
+python -m venv .venv
+# Activate the environment for your operating system, then:
+python -m pip install jupyter numpy pandas matplotlib plotly prophet scikit-learn
+jupyter notebook covid19_prediction_.ipynb
+```
 
-- Python (NumPy, Pandas, Matplotlib, Seaborn)
-- Plotly & Visualizations
-- Scikit-learn (for models and metrics)
-- Prophet (for time series forecasting)
-- Git & GitHub
+## Learning focus
 
----
+- Cleaning and aggregating time-series data.
+- Comparing trends through interactive visualizations.
+- Preparing date/value columns for Prophet.
+- Understanding the limits of forecast evaluation.
 
-## 📚 Why This Repository?
+## Limitations
 
-As a student passionate about machine learning, I created this repository to:
+This is a learning exercise, not a validated forecasting service. The R² calculation in the exported workflow uses training data; it is not an independent measure of future forecast performance. Data compatibility and a full clean-environment run still need to be verified.
 
-- Practice real-world data analysis
-- Share my learning journey openly
-- Improve my problem-solving and coding skills
-- Track progress over time
-
----
-
-## 📈 My Learning Goals
-
-- Get comfortable with different types of ML models
-- Understand how to clean, visualize, and process data
-- Build solid predictive models and evaluate them
-- Work with time series, classification, and regression problems
+Use the notebook as the primary walkthrough. The Python file is an exploratory export and may need cleanup before standalone execution.
 
 ---
 
-## 🤝 Let’s Connect!
+Created by [Azeem Ahmad](https://github.com/AzeemAhmad123). See my [portfolio](https://portfolio-gamma-lake-28.vercel.app/) for current computer vision and full-stack work.
 
-Feel free to explore, fork, or suggest improvements!  
-I'm always open to feedback and collaboration as I grow in this field.
-
-📫 **LinkedIn**: https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BdlQT4sKxTeuOSEPmj5sPQQ%3D%3D 
-📂 **GitHub**: https://github.com/AzeemAhmad123
-
----
-
-> ⭐ *Thanks for checking out my projects — more coming soon!*
